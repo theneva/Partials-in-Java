@@ -1,0 +1,15 @@
+<menus>
+    <menu actionCommand="actionCommand" label="File">
+        <menu actionCommand="new" label="New"/>
+        <menu actionCommand="open" label="Open">
+            <menu actionCommand="open" label="Open..."/>
+            <menu labe="Open recent">
+                <menu actionCommand="openRecentFile1" label="Recent file #1"/>
+                <menu actionCommand="openRecentFile2" label="Recent file #2"/>
+            </menu>
+        </menu>
+    </menu>
+    <menu label="edit">
+        <menu actionCommand="copy" label="Copy"/>
+    </menu>
+</menus>

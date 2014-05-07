@@ -1,0 +1,42 @@
+[
+    {
+        "label": "File",
+        "items": [
+            {
+                "label": "New",
+                "actionCommand": "newFile"
+            },
+            {
+                "label": "Open",
+                "items": [
+                    {
+                        "label": "Open...",
+                        "actionCommand": "open"
+                    },
+                    {
+                        "label": "Open recent",
+                        "items": [
+                            {
+                                "label": "Recent file #1",
+                                "actionCommand": "openRecentFile1"
+                            },
+                            {
+                                "label": "Recent file #2",
+                                "actionCommand": "openRecentFile2"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "label": "Edit",
+        "items": [
+            {
+                "label": "Copy",
+                "actionCommand": "copy"
+            }
+        ]
+    }
+]
