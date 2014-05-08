@@ -1,4 +1,3 @@
-# Simulating partial classes in Java
+# JMenuBar generation from JSON
 
-This is not to be taken seriously. Reflection is fun!
-
+This branch is just a proof-of-concept for JMenuBar generation from a JSON file with GSON.
