@@ -1,7 +1,5 @@
 package no.nith;
 
-import no.nith.menu_method_holders.MenuMethodHolder;
-
 import javax.swing.*;
 import java.io.FileNotFoundException;
 
@@ -12,14 +10,12 @@ public class Main
 {
     public static void main(String[] args) throws FileNotFoundException
     {
-        MenuMethodHolder menuMethodHolder = new MenuMethodHolder();
-
-        PartialJFrame<MenuMethodHolder> notepad = new PartialJFrame<>(menuMethodHolder, "menus.json");
+        Notepad notepad = new Notepad("menus.json");
 
         JTextArea area = new JTextArea();
         notepad.add(area);
 
-        notepad.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        notepad.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // or whatever
         notepad.setSize(400, 300);
         notepad.setVisible(true);
     }

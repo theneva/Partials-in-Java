@@ -1,21 +1,21 @@
 [
     {
         "label": "File",
-        "items": [
+        "children": [
             {
                 "label": "New",
                 "actionCommand": "newFile"
             },
             {
                 "label": "Open",
-                "items": [
+                "children": [
                     {
                         "label": "Open...",
                         "actionCommand": "open"
                     },
                     {
                         "label": "Open recent",
-                        "items": [
+                        "children": [
                             {
                                 "label": "Recent file #1",
                                 "actionCommand": "openRecentFile1"
@@ -32,7 +32,7 @@
     },
     {
         "label": "Edit",
-        "items": [
+        "children": [
             {
                 "label": "Copy",
                 "actionCommand": "copy"

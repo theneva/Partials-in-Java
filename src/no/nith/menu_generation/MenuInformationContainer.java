@@ -1,17 +1,17 @@
-package no.nith.domain;
+package no.nith.menu_generation;
 
 import java.util.List;
 
 /**
  * Created by theneva on 07/05/14.
  */
-public class CustomMenu
+public class MenuInformationContainer
 {
     private String label;
-    private List<CustomMenu> items;
+    private List<MenuInformationContainer> children;
     private String actionCommand;
 
-    public CustomMenu()
+    public MenuInformationContainer()
     {
     }
 
@@ -25,14 +25,14 @@ public class CustomMenu
         this.label = label;
     }
 
-    public List<CustomMenu> getItems()
+    public List<MenuInformationContainer> getChildren()
     {
-        return items;
+        return children;
     }
 
-    public void setItems(List<CustomMenu> items)
+    public void setChildren(List<MenuInformationContainer> children)
     {
-        this.items = items;
+        this.children = children;
     }
 
     public String getActionCommand()
@@ -48,9 +48,9 @@ public class CustomMenu
     @Override
     public String toString()
     {
-        return "CustomMenu{" +
+        return "MenuInformationContainer{" +
                 "label='" + label + '\'' +
-                ", items=" + items +
+                ", children=" + children +
                 ", actionCommand='" + actionCommand + '\'' +
                 '}';
     }
