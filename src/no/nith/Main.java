@@ -1,6 +1,6 @@
 package no.nith;
 
-import no.nith.menu_holders.MenuMethodHolder;
+import no.nith.menu_method_holders.MenuMethodHolder;
 
 import javax.swing.*;
 import java.io.FileNotFoundException;
@@ -19,7 +19,7 @@ public class Main
         JTextArea area = new JTextArea();
         notepad.add(area);
 
-        notepad.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        notepad.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         notepad.setSize(400, 300);
         notepad.setVisible(true);
     }

@@ -1,4 +1,4 @@
-package no.nith.menu_holders;
+package no.nith.menu_method_holders;
 
 import no.nith.PartialJFrame;
 
